@@ -63,18 +63,13 @@ class SelectGroup(QWidget):
 
         button1 = QPushButton("Select")
         button2 = QPushButton("close")
-        layout2 = QHBoxLayout()
-        button3 = QPushButton("close")
-        button4 = QPushButton("close")
 
         button1.clicked.connect(self.click)
         button2.clicked.connect(self.close)
 
         self.textEdit = QTextBrowser()
-        layout.addWidget(button1, 0, Qt.AlignLeft | Qt.AlignTop)
-        layout.addWidget(button2, 0, Qt.AlignLeft | Qt.AlignTop)
-        layout.addWidget(button3)
-        layout.addWidget(button4, 0, Qt.AlignLeft)
+        layout.addWidget(button1)
+        layout.addWidget(button2)
         layout.addWidget(self.textEdit)
         self.setLayout(layout)
 
