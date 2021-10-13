@@ -2,6 +2,7 @@
 
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 import random
 import sys
 
@@ -87,5 +88,6 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     main = SelectGroup()
     main.setWindowTitle("Groups Selector")
+    main.setWindowIcon(QIcon("./icon/smart.ico"))
     main.show()
     sys.exit(app.exec_())
