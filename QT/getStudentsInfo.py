@@ -31,4 +31,4 @@ if __name__ == '__main__':
 
     excelObj = ExcelUtil(os.path.abspath("./conf/sss.xlsx"))
     # excelObj.getStudentNameList(0)
-    excelObj.getStudentNameList2(0)
+    excelObj.getStudentNameList2(3)
